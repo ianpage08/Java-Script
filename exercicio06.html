@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>aprendendo dom</title>
+    <style>
+        body {
+            background-color: darkcyan;
+            font-size: 1.5em;
+            color: azure;
+            font-family: 'Courier New', Courier, monospace  ;
+        }
+    </style>
+    
+</head>
+<body>
+
+    <h1>aprendendo Dom</h1>
+    <p>aqui vai os resultados</p>
+    <p>aprendendo a usar o <strong>DOM</strong> em javaScript</p>
+    <div id="cc">clique em mim</div>
+    <script>
+        var p1 = window.document.getElementsByTagName('p')[0]
+        //getElementsByTagName é usado para indentificar a marca "TAGS" com o mesmo nome por exemplo todos os paragrafos do html
+        var dd = window.document.getElementById('cc')
+        /*dd.style.backgroundColor = 'green'
+        dd.style.padding = '10px'
+        dd.innerText = 'estou aguadando'
+        p1.style.color = 'black'
+        document.write('apredendo ' + p1.innerText)*/
+        var d = document.querySelector('div#cc')
+        //querySelector é  o novo metodo usado para indentificar a  que localiza por css "TAGS" 
+        d.style.background = 'black'
+        
+    </script> 
+</body>
+</html>

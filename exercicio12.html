@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testando condições</title>
+    <style>
+        body {
+            background-color: rgb(213, 252, 247);
+        }
+        p {
+            font-size: 1.5em;
+        }
+    </style>
+</head>
+<body>
+    <h1>Testando Condições</h1>
+    <form>
+        Coloque o nome de seu pais: <input type="text" name="pais" id="pais">
+        <input type="button" value="verificar" onclick="verificar()">
+        <div id="res">
+
+        </div>
+    </form>
+    <script> 
+            function verificar() {
+                var pais = document.getElementById('pais')
+                var res = document.getElementById('res')
+                var p = 'brasil'
+                
+                if (pais === p) {
+                    res.innerHTML = 'Você fala portugues'
+                }
+                else {
+                    res.innerHTML = 'Você FALA outra lingue'
+                }
+
+
+        }
+    </script>
+</body>
+</html>

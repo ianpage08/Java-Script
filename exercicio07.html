@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos dom</title>
+    <style>
+        body {
+            background-color: rgb(255, 223, 210);
+            font-size: 1.5em;
+            color: rgb(0, 0, 0);
+            font-family: 'Courier New', Courier, monospace  ;
+        }
+        div#cc {
+            background-color: chartreuse;
+            font-weight: bold;
+            width: 200px;
+            height: 200px;
+            line-height: 200px;
+            text-align: center;  
+        }
+    </style>
+    
+</head>
+<body>
+    <div id="cc">inteja...</div>
+    <script>
+    var a = document.getElementById('cc')
+    a.addEventListener('click', clicar)
+    a.addEventListener('mouseenter', entrar)
+    a.addEventListener('mouseout', sair)
+    //addEventListener serve para dar os comandos de interação pelo proprio codigo do javascript sem precisar colocar o evento no html ( bom para não poluir muito o hmtl)
+         function clicar(){
+            a.innerText = 'vc clicou'
+            a.style.background = 'blue'
+         }
+         function entrar(){
+            a.innerText = 'vc Entrou'
+            a.style.background = 'yellow'
+         }
+         function sair(){
+            a.innerText = ' Voce saiu!'
+            a.style.backgroundColor = 'red'
+         }
+    </script> 
+</body>
+</html>

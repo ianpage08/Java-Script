@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos dom</title>
+    <style>
+        body {
+            background-color: rgb(247, 199, 199);
+            font-size: 1.5em;
+            color: rgb(0, 0, 0);
+            font-family: 'Courier New', Courier, monospace  ;
+        }
+        
+    </style>
+    
+</head>
+<body>
+    <h1>somando valores</h1>
+    <form action="aa.js" method="post" autocomplete="on" >
+        <input type="number" name="numero" id="num"> +
+        <input type="number" name="numero" id="nom">
+        <input type="button" value="somar" onclick="Somar()">
+        <input type="reset" value="limpar">
+        <div id="res">Resultado:</div> 
+        
+    </form>
+    <script>
+        function Somar(){
+            var nu = document.getElementById('num') 
+            var no = document.getElementById('nom')
+            var r = document.getElementById('res')
+            var n1 = Number(nu.value)
+            var n2 = Number(no.value)
+            var soma = Number(n1) + Number(n2)
+            r.innerHTML = `soma entre ${n1} e ${n2} é igual a <strong> ${soma}</strong>`
+            //alert ( `soma entre ${n1} e ${n2} é igual a ${soma}`)
+            
+            
+        }
+    
+    </script> 
+</body>
+</html>

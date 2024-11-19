@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testando condições</title>
+    <style>
+        body {
+            background-color: rgb(238, 129, 129);
+        }
+        p {
+            font-size: 1.5em;
+        }
+    </style>
+</head>
+<body>
+    <h1>Testando Condições</h1>
+    <form>
+        Velocidade do carro: <input type="number" name="numero" id="numero">
+        <input type="button" value="Pesquisar" onclick="calcular()">
+        <div id="res">
+
+        </div>
+    </form>
+    <script> 
+            function calcular() {
+                var carro = document.getElementById('numero')
+                var res = document.getElementById('res')
+                var vel = Number(carro.value)// sempre fazer convers~]ao quando for usado numeros
+                var max = 50
+                
+                if ( max < vel) {
+                res.innerHTML += `<p>você está a ${vel}km/h, velocidade maxima permitida ${max}Km/h. <strong>(vc foi multado)</strong></p>`
+            } else {
+                res.innerHTML += '<p>Vc está dirindo dentro da lei</p>'
+            }
+            res.innerHTML += `<p>acho que to apredendo isso</p>`
+            
+        }
+    </script>
+</body>
+</html>
