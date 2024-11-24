@@ -26,12 +26,12 @@
             function verificar() {
                 var pais = document.getElementById('pais')
                 var res = document.getElementById('res')
-                var p = 'brasil'
+                let brasil = 'brasil'
                 
-                if (pais === p) {
+                if (pais != brasil) {
                     res.innerHTML = 'Você fala portugues'
                 }
-                else {
+                else  {
                     res.innerHTML = 'Você FALA outra lingue'
                 }
 

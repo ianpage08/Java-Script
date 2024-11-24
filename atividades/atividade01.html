@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificador de Idade</title>
+    <style>
+        body {
+            background-color: rgb(252, 170, 116);
+        }
+        h1, h2 {
+            text-align: center;
+        }
+        section {
+            width: 500px;
+            margin: auto;
+            background-color: aliceblue;
+            border-radius: 10px;
+            padding: 10px;
+        }
+        p {
+            padding: 5px;
+            font-size: 1.3em;
+        }
+        img {
+            width: 250px;
+            height: 250px;
+            border-radius: 50%;
+            border: 1px solid black;
+            
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Verificador de Idade</h1>
+    </header>
+    <section>
+         
+        <p> Ano de Nascimento:
+            <input type="number" name="anonascimento" id="idade" min="0">
+        </p>
+        
+        
+            <p>
+                Sexo:
+                <input type="radio" name="sexo" id="mas" checked> <label for="mas">Masculino</label>
+                <input type="radio" name="sexo" id="fem"> <label for="fem">Feminino</label>
+            </p>
+        
+        
+            <p>
+                <input type="button" value="Verificar" onclick="verificar()">
+            </p>
+        
+        <div id="res"> <p>Preencha os campos para vc ver o resultado!</p>
+            
+        </div>
+        
+
+    </section>
+    <footer>
+        <h2>@Ian Page Maciel</h2>
+    </footer>
+    <script src="Java/javascript01.js"></script>
+</body>
+</html>
