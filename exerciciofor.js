@@ -1,7 +1,9 @@
-var c= 10
+var inicio= 10
+var fim = 1
+var passo = 1
 console.log ('Vai Começar em')
-for (c; c >=1 ; c -= 1){
-    console.log (`${c} segundos `)
+for (inicio; inicio >=fim ; inicio = inicio - passo){
+    console.log (`${inicio} segundos `)
 } 
 console.log ('Começou')
 

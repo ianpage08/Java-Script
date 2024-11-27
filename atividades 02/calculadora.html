@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vamos contar</title>
+    <style>
+        body {
+            background-color: rgb(154, 199, 250);
+        }
+        h1, h2 {
+            text-align: center;
+        }
+        section {
+            width: 500px;
+            margin: auto;
+            background-color: aliceblue;
+            border-radius: 10px;
+            padding: 10px;
+        }
+        p {
+            padding: 5px;
+            font-size: 1.3em;
+        }
+        footer {
+
+            text-align: center;
+        }
+        div {
+            padding: 10px;
+            font-size: 1.3em;
+            font-weight: bold;
+        }
+        
+    </style>
+</head>
+<body>
+    <header>
+        <h1 id="h1">Contando</h1>
+    </header>
+    <section >
+        
+            <div id="incio"> 
+                <label for="pular">Número:</label> <input type="number" name="ini" id="num">
+                <input type="button" value="Tabuada" onclick="tabuada()">
+            </div>
+            
+            <div id="resultado">
+                <select name="tabuada" id="tabuadas" size="10">
+                    <option > digite um numero acima</option>
+                </select>
+            </div>
+            
+            
+            
+        
+
+    </section>
+    <footer>
+        <p>@Ian Page</p>
+    </footer>
+    <script src="Java/calcularadora.js"></script>
+    
+</body>
+</html>

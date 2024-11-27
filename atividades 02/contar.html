@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            background-color: rgb(154, 199, 250);
+        }
+        h1, h2 {
+            text-align: center;
+        }
+        section {
+            width: 500px;
+            margin: auto;
+            background-color: aliceblue;
+            border-radius: 10px;
+            padding: 10px;
+        }
+        p {
+            padding: 5px;
+            font-size: 1.3em;
+        }
+        footer {
+
+            text-align: center;
+        }
+        div {
+            padding: 10px;
+            font-size: 1.3em;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 id="h1">Contando</h1>
+    </header>
+    <section >
+        
+            <div id="incio"> 
+                <label for="pular">Inicio:</label> <input type="number" name="ini" id="com">
+            </div>
+            <div id="fim">
+                <label for="final">Fim:</label> <input type="number" name="fi" id="final">
+            </div>
+            <div id="passo">
+                <label for="pular">Passo:</label> <input type="number" name="pas" id="pular">
+            </div>
+            <div>
+                <input type="button" value="contar" onclick="contar()">
+            </div>
+            <div id="resultado">
+                <p>Preparando contagem...</p>
+            </div>
+            
+            
+            
+        
+
+    </section>
+    <footer>
+        <p>@Ian Page</p>
+    </footer>
+    <script src="Java/contagem.js"></script>
+    
+</body>
+</html>
